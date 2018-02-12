@@ -37,6 +37,10 @@ aside * h2 {
   letter-spacing: 5px;
 }
 
+aside section{
+  padding: 5%;
+}
+
 /* +++++++   HERO  ++++++++ */
 main section > h2{
   text-transform: uppercase;
@@ -47,6 +51,10 @@ main section > h2{
   background-color: #6E6B7D;
   box-shadow: 3px 3px 30px 5px #647087 inset;
   padding: 15% 0;
+}
+
+main section, main article{
+  padding: 5% 0%;
 }
 
 article h3,
@@ -63,6 +71,7 @@ article ul {
 }
 
 .flex-aside {
+  margin-left: 4%;
   flex-basis: 40%;
   display: flex;
 }
@@ -70,7 +79,7 @@ article ul {
 .flex-main {
   flex-basis: 40%;
   display: flex;
-  margin-left:5%;
+  margin-left: 7%;
 }
 
 .references {
