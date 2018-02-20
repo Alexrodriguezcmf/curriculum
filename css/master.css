@@ -26,6 +26,7 @@ h3{
 aside {
   background-color: #6E6B7D;
   border-radius: 10%;
+  flex-basis: 100%;
 }
 
 aside * {
@@ -65,20 +66,21 @@ article ul {
   list-style-type: square;
 }
 
-.flex {
+.flex-content{
   display: flex;
   margin: 0;
+  flex-wrap: wrap;
 }
 
 .flex-aside {
+  display: flex;
   margin-left: 4%;
   flex-basis: 40%;
-  display: flex;
 }
 
 .flex-main {
-  flex-basis: 40%;
   display: flex;
+  flex-basis: 40%;
   margin-left: 7%;
 }
 
@@ -110,6 +112,7 @@ meter {
   width: 70%;
 
 }
+
 meter::-webkit-meter-bar {
   background : none;
   background-color : #DFE4F5;
@@ -120,4 +123,20 @@ meter::-webkit-meter-optimum-value {
   background: none;
   background-color: #647087;
   box-shadow: 0 2px 5px 0px #333 inset;
+}
+
+@@media (max-width: 550px) {
+  .flex-content{
+    font-size: 1.6em;
+    /* flex-wrap: wrap; */
+  }
+  .flex-aside{
+    flex: 50%
+  }
+  .flex-main{
+    padding-top: 10%;
+  }
+  aside, main{
+    flex: 100%
+  }
 }
