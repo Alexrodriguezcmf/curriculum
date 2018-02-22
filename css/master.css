@@ -125,18 +125,21 @@ meter::-webkit-meter-optimum-value {
   box-shadow: 0 2px 5px 0px #333 inset;
 }
 
-@@media (max-width: 550px) {
+@media (max-width: 550px) {
   .flex-content{
     font-size: 1.6em;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
   }
   .flex-aside{
-    flex: 50%
+    display: flex;
+    flex-basis: 100%;
   }
   .flex-main{
-    padding-top: 10%;
+    display: flex;
+    flex-basis: 100%;
+    margin-top: 10%;
   }
   aside, main{
-    flex: 100%
+    flex: 100%;
   }
 }
